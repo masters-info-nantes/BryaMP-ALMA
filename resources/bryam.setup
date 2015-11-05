@@ -35,12 +35,16 @@
         name="fr.obeo.releng.targetplatform-feature.feature.group"/>
     <requirement
         name="org.eclipse.m2e.feature.feature.group"/>
+    <requirement
+        name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>        
     <repository
         url="http://mbarbero.github.io/fr.obeo.releng.targetplatform/p2/"/>
     <repository
         url="http://eclipse-cs.sourceforge.net/update/"/>
     <repository
         url="http://download.eclipse.org/releases/mars"/>
+    <repository
+        url="http://findbugs.cs.umd.edu/eclipse"/>        
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
@@ -56,6 +60,12 @@
       <predicate
           xsi:type="predicates:NamePredicate"
           pattern="fr.univnantes.alma.oomph"/>
+      <predicate
+          xsi:type="predicates:NamePredicate"
+          pattern="fr.univnantes.alma.resources"/>
+      <predicate
+          xsi:type="predicates:NamePredicate"
+          pattern="fr.univnantes.alma.server"/>
     </workingSet>
     <description>The dynamic working sets for ${scope.project.label}</description>
   </setupTask>
@@ -71,4 +81,4 @@
       xsi:type="setup:ProjectCatalog"
       href="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']"/>
   <description>Acceleo is an open source code generator used to generate any kind of text files from EMF models.</description>
-</setup:Project>
+</setup:Project> 
