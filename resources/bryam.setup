@@ -54,7 +54,8 @@
     <workingSet
         name="BryAM-ALMA">
       <predicate
-          xsi:type="predicates:RepositoryPredicate"/>
+          xsi:type="predicates:NamePredicate"
+          pattern="fr.univnantes.alma.oomph"/>
     </workingSet>
     <description>The dynamic working sets for ${scope.project.label}</description>
   </setupTask>
