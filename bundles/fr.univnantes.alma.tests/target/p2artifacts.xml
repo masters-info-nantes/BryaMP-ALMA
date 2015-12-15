@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='fr.univnantes.alma.tests' version='1.0.0.201512152035'>
+    <properties size='5'>
+      <property name='artifact.size' value='3645'/>
+      <property name='download.size' value='3645'/>
+      <property name='maven-groupId' value='fr.univnantes.alma'/>
+      <property name='maven-artifactId' value='fr.univnantes.alma.tests'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+    </properties>
+  </artifact>
+</artifacts>

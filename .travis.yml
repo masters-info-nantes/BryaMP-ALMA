@@ -1,0 +1,13 @@
+language: java
+script: mvn clean verify -f bundles/fr.univnantes.alma.releng/pom.xml
+jdk: oraclejdk8
+deploy:
+  provider: releases
+  api_key:
+    secure: wTQkKVx+Aluq1oEBYEDVNqsbigat/aqWMfzQOWTUY5FmTa35p4zBzykGXEXjvlEqvbIdtljuZ+kwv0cotAmn5EvSWFs+idwxBGEGRagtS0rkUhzCwjv4GJlCv6B6VTniagcCb/hmC5dOJ8eLC4XLEN3s9jr1idgYWXWc8WCSUMOS4lAbU7j7KHuez3KtfLgtd94Xp2iFOWf1m7Xg8W6jlX66V4F3yhfEjBieQqhFM/+YPKWPFTiX1MHfqGBnM8UNpFPdIVsJSHplj2e7H0SjPU7pNLe8KuidEmg+FzShw2C9X9+RoWSDr4WeIcYnJ9asPNScYhTQxid4rHpxDDjIqysbujqqP1prB975xETsF1dx/03bLgZonUCxtkZzGjNluKP40Mdb/CNcIp+ZjiWSR8Hrwtm90Ri47ThCV2NN3PkPRlPYTGpFstbVFmYbuPU0A1vcn+TBCc24Lwq+N+jsZPA/8pr7VZONmcdlUaY4cd+fx35qUmk38ZaY94IF9ksNQ4QW5DCi0VZ7kdFtcSRzmK1K1ogRB5+liVr4rdbr2ozO/pqWO/C12HjYkl2lMfg4GMSyM8DXuXbaDD2lZ+7++AdfwLZFB2G7hUjF0Y3bIsOfJkC0YhJrh1lXo3DkSg6FZsaWCyQUM0Ha9ySvPtvhvDScR/7vtSANomTYLoa2EKE=
+  file_glob: true
+  file: bundles/fr.univnantes.alma.repository/target/products/ALMAServer-*.zip
+  on:
+    repo: masters-info-nantes/BryaMP-ALMA
+    tags: true
+    all_branches: false
