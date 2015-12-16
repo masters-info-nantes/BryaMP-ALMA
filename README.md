@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/master-info-nantes/BryaMP-ALMA.png)](https://travis-ci.org/master-info-nantes/BryaMP-ALMA)
+[![Build Status](https://travis-ci.org/masters-info-nantes/BryaMP-ALMA.png)](https://travis-ci.org/masters-info-nantes/BryaMP-ALMA)
 
 [Project instructions](http://sbegaudeau.github.io/alma-m2-2015/)
 
